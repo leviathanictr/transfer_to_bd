@@ -1,10 +1,7 @@
-from start import *
-from data_table import *
-import csv
-from csv_table import *
 from add import *
 
-db.connect()
+cur.execute('COMMIT')
+# создаем таблицу data
 try:
     cur.execute('''CREATE TABLE DATA
             (
@@ -12,6 +9,6 @@ try:
             path TEXT UNIQUE,
             last_use TEXT);''')
 except:
-    pass
+    pass  # ЕСли она уже создана, просто пропускаем
 cur.execute("COMMIT")
-add()
+add()  # Вызываем функцию add()
