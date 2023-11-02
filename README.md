@@ -1,0 +1,1 @@
+This app transforms csv, xls and xlsx files to data base. To use it, you should write folder's path and data base data to settings.ini. You can add new and delete previous files from folser. When you start programm, it automaticly adds new files. Moreover, it ignores other files in folder.
